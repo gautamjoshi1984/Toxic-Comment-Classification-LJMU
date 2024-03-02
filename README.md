@@ -13,3 +13,22 @@ Target Columns: There are seven output columns that needs to be predicted by the
   * sexual_explicit
 
 This problem is an example of Multi Label text classification where one record may belong to more than one class unlike multi class classification where the one record can belong to only one class. 
+
+Models tried:
+
+* BERT base
+* BERT base with initial layers frozen
+* RoBERTa
+* DistilBERT
+
+Hyper-Parameters:
+* Batch Size
+* Learning Rate
+
+Loss Function:
+* BCEwithLogitsLoss (With and without weights, pos_weight to handle the class imbalance issue)
+* FocalLoss
+
+Optimizer
+Adam
+AdamW

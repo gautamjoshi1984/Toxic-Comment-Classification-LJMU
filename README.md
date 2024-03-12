@@ -28,7 +28,8 @@ This problem is an example of Multi Label text classification where one record m
 ### Loss Function:
 * BCEwithLogitsLoss (With and without weights, pos_weight to handle the class imbalance issue)
 * FocalLoss
+* Dice Loss
+* Focal Tversky Loss
 
 ### Optimizer
-* Adam
 * AdamW
